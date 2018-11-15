@@ -1,2 +1,3 @@
-# OpenCV
-MasterOpenCV - Rajeev Ratan (Udemy Instructor)
+# OpenCV     
+This Repo is For my Reference and for Beginers    
+MasterOpenCV - Rajeev Ratan (Udemy Instructor) 
