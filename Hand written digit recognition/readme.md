@@ -52,7 +52,7 @@ Contour retrieval mode
 #### method:
 contour approximation method (if you use Python see also a note below).
 
-- **CV_CHAIN_APPROX_NONE** stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour 
+- **CV_CHAIN_APPROX_NONE** stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the         contour 
   will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1.   
 - **CV_CHAIN_APPROX_SIMPLE** compresses horizontal, vertical, and diagonal segments and leaves only their end points.
   For example, an up-right rectangular contour is encoded with 4 points.    
@@ -60,3 +60,18 @@ contour approximation method (if you use Python see also a note below).
   See [TehChin89] for details.    
 - **offset** – Optional offset by which every contour point is shifted. 
   This is useful if the contours are extracted from the image ROI and then they should be analyzed in the whole image context.
+  
+**cv2.moment** help us to calculate some features like   
+- center of mass of the object   
+- area of the object    
+refer :https://docs.opencv.org/3.1.0/dd/d49/tutorial_py_contour_features.html   
+   
+**cv2.resize:**    
+cv2.resize(src,fx,fy,inpterpolation)   
+- **Interpolation**     -- consturcting new data points with in the range of a discrete set of known data points   
+- **cv2.INTER_AREA**    -- good for shrinking or downsampling    
+- **cv2.INTER_NEARES**  -- FASTEST    
+- **cv2.INTER_LINEAR**  -- Good fro zooming or upsampling (default)   
+- **cv2.INTER_CUBIC**   -- BETTER   
+- **CV2.INTER_LANCZOS4**-- BEST    
+        
